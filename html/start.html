@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>ICT375 - Assignment 2</title>
+    </head>
+
+    <body>
+        <h1 id="page-title">ICT375 - Assignment 2: Weather Data Viewer</h1>
+        <form action="none" method="get" id="weather-frm">
+            <label for="weather-frm-year">Year:</label>
+            <input type="number" class="no-spinner" name="year" id="weather-frm-year" />
+            <br />
+            <label for="weather-frm-monthStart">Month Start:</label>
+            <!-- filled via script -->
+            <select name="monthStart" id="weather-frm-monthStart"></select>
+            <label for="weather-frm-monthEnd">Month End:</label>
+            <!-- filled via script -->
+            <select name="monthEnd" id="weather-frm-monthEnd"></select>
+            <br />
+            <span>Data:</span>
+            <input type="checkbox" value="windSpeed" name="data1" id="weather-frm-windSpd" />
+            <label for="weather-frm-windSpd">Wind Speed</label>
+            <input type="checkbox" value="solarRad" name="data2" id="weather-frm-solarRad" />
+            <label for="weather-frm-solarRad">Solar Radiation</label>
+            <br />
+            <div class="center-buttons">
+                <input type="submit" value="Submit" id="weather-frm-submit"/>
+                <input type="reset" value="Reset" id="weather-frm-reset"/>
+            </div>
+        </form>
+        
+        <div id="output-area">
+            <div id="out-table"></div>
+            <div id="out-graph"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="../js/formBehaviour.js" type="module"></script>
+    </body>
+</html>

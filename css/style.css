@@ -1,0 +1,136 @@
+html
+{
+    background-color: rgb(201, 201, 201);
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page-title
+{
+    color: black;
+    text-align: center;
+}
+
+#weather-frm
+{
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px;
+    width: 440px;
+    margin: 0px auto 8px;
+    box-sizing: border-box;
+}
+
+#weather-frm *
+{
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+#weather-frm #weather-frm-year
+{
+    width: 50px;
+}
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#weather-frm .center-buttons
+{
+    margin-bottom: 0;
+}
+
+#weather-frm input[type=reset], 
+#weather-frm input[type=submit]
+{
+    width: 50%;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 8px;
+    text-align: center;
+    background-color: #0099ff;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#weather-frm input[type=reset]:hover, 
+#weather-frm input[type=submit]:hover
+{
+    background-color: #00b7ff;
+}
+
+#output-area
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#output-area > *
+{
+    margin-top: 30px;
+}
+
+.center-buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.alert
+{
+    color: red;
+    font-weight: bold;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr
+{
+    background-color: #bdbcbc;
+}
+
+table tr:nth-child(even)
+{
+    background-color: #979797;
+}
+
+table tr:hover
+{
+    background-color: #ddd;
+}
+
+table th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+canvas
+{
+    min-width: 600px;
+}
